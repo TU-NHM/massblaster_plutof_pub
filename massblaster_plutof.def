@@ -1,0 +1,27 @@
+# A base Ubuntu 20 Singularity container with support for PlutoF massBLASTer tool
+
+BootStrap: library
+From: ubuntu:20.04
+
+%post
+    apt update
+
+    # wget
+    apt install -y wget
+
+    # Installing BLAST
+    wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ncbi-blast-2.10.0+-x64-linux.tar.gz
+    tar -xzvf ncbi-blast-2.10.0+-x64-linux.tar.gz
+
+%environment
+    export LC_ALL=C
+    export PATH=$PATH:/ncbi-blast-2.10.0+/bin
+
+%runscript
+    exec "$@"
+
+%labels
+    Author kessya
+
+%files
+    run_massblaster.sh
