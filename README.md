@@ -1,7 +1,7 @@
 # massblaster_plutof
 EOSC-Nordic service preparations (massBLASTer)
 
-massBLASTer - a megablast utility for batch BLAST analysis of multiple query sequences against custom ribosomal ITS sequence datasets, script and BLAST databases.
+massBLASTer - a megablast utility for batch BLAST analysis of multiple query sequences against custom ribosomal ITS sequence datasets provided by the [UNITE Community](https://unite.ut.ee).
 
 ## Setup
 
