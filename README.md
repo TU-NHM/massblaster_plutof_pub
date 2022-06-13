@@ -32,5 +32,24 @@ massBLASTer - a megablast utility for batch BLAST analysis of multiple query seq
 
 4. Run the pipeline using SIF (example data with run_id=11)
     ```console
-    ./massblaster.sif ./run_massblaster.sh 11 -num_threads 4 -dust no -db ../../massblaster_plutof_rel/data/plutof_fungi -outfmt 15 -reward 1 -gapextend 2 -max_target_seqs 1 -penalty -2 -word_size 28 -gapopen 0
+    ./massblaster.sif /run_massblaster.sh 11 -num_threads 4 -dust no -db "/massblaster_plutof_rel/data/plutof_fungi_its" -outfmt 15 -reward 1 -gapextend 2 -max_target_seqs 1 -penalty -2 -word_size 28 -gapopen 0
     ```
+
+## List of BLAST database aliases -
+* plutof_fungi_its: "[UNITE](https://unite.ut.ee) (only fungi); rDNA ITS"
+* plutof_nf_its: "[UNITE](https://unite.ut.ee) (non-fungi) / Other_euk_1; rDNA ITS"
+* insd_its: "INSD (only fungi); rDNA ITS"
+* insd_nf_its: "INSD (non-fungi); rDNA ITS / Other_euk_2"
+* envir_plutof_its: "[UNITE](https://unite.ut.ee) environmental (all eukaryotes) / Envir; rDNA ITS"
+* plutof_tri12: "[ToxGen](https://github.com/tomaszkulik/ToxGen); Tri12"
+* plutof1: "UNITE+INSD"
+* plutof2: "UNITE+Envir"
+* plutof3: "UNITE+Other_euk"
+* plutof4: "INSD+Envir"
+* plutof5: "INSD+Other_euk"
+* plutof6: "Envir+Other_euk"
+* plutof7: "UNITE+INSD+Envir"
+* plutof8: "UNITE+INSD+Other_euk"
+* plutof9: "INSD+Envir+Other_euk"
+* plutof10: "UNITE+Envir+Other_euk"
+* plutof11: "UNITE+INSD+Envir+Other_euk"
