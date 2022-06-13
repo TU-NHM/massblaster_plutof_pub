@@ -15,11 +15,11 @@ mv D5F91940D6C048FAAFD6A9B078519C0C80263F9C21CA4A084950BDE0086F017D massblaster.
 echo "Removing old blast database files ..."
 rm -fr massblaster_plutof_rel/
 
-# Download BLAST database files
-echo "Downloading blast database files from https://plutof.ut.ee/#/filerepository/view/4050006 ..."
-wget https://files.plutof.ut.ee/public/orig/AA/C7/AAC732C056CA14965CFB9692A9AE8605AC8E2206D1661FD24FC5FE57B508E00A.gz
-tar -xzvf AAC732C056CA14965CFB9692A9AE8605AC8E2206D1661FD24FC5FE57B508E00A.gz
-rm AAC732C056CA14965CFB9692A9AE8605AC8E2206D1661FD24FC5FE57B508E00A.gz
+# Download BLAST database files => upload new version of files
+echo "Downloading blast database files from https://plutof.ut.ee/#/filerepository/view/5547681 ..."
+wget https://files.plutof.ut.ee/public/orig/49/B3/49B3874BD2190F90555E1182E850946DE574B39BEC40EE28B0F13E7D32BB8CC7.gz
+tar -xzvf 49B3874BD2190F90555E1182E850946DE574B39BEC40EE28B0F13E7D32BB8CC7.gz
+rm 49B3874BD2190F90555E1182E850946DE574B39BEC40EE28B0F13E7D32BB8CC7.gz
 
 # end here
 echo "Done"

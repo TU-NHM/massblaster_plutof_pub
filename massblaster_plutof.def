@@ -9,13 +9,16 @@ From: ubuntu:20.04
     # wget
     apt install -y wget
 
+    # libgomp1
+    apt install -y libgomp1
+
     # Installing BLAST
-    wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ncbi-blast-2.10.0+-x64-linux.tar.gz
-    tar -xzvf ncbi-blast-2.10.0+-x64-linux.tar.gz
+    wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.13.0/ncbi-blast-2.13.0+-x64-linux.tar.gz
+    tar -xzvf ncbi-blast-2.13.0+-x64-linux.tar.gz
 
 %environment
     export LC_ALL=C
-    export PATH=$PATH:/ncbi-blast-2.10.0+/bin
+    export PATH=$PATH:/ncbi-blast-2.13.0+/bin
 
 %runscript
     exec "$@"
