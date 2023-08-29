@@ -16,7 +16,7 @@ rm -fr massblaster_plutof_rel/
 
 # Download BLAST database files
 echo "Downloading blast database files from https://app.plutof.ut.ee/filerepository/view/6545813 ..."
-wget https://files.plutof.ut.ee/public/public/orig/71/A4/71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
+wget https://files.plutof.ut.ee/public/orig/71/A4/71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
 tar -xzvf 71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
 rm 71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
 
