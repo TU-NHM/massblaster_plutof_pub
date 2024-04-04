@@ -7,18 +7,18 @@ mkdir -p userdir
 mkdir -p outdata
 
 # Download massblaster.sif
-echo "Downloading massBLASTer singularity container from https://plutof.ut.ee/#/filerepository/view/5551008 ..."
-wget -O massblaster.sif https://files.plutof.ut.ee/public/orig/6E/DF/6EDF95C51D6111E92D666890F1DC79508B5601C06618904F991593C14BB3C279
+echo "Downloading massBLASTer singularity container from https://app.plutof.ut.ee/filerepository/view/6869191 ..."
+wget -O massblaster.sif https://s3.hpc.ut.ee/plutof-public/original/94f86639-1d7f-4836-83e3-0c66c7e44132.sif
 
 # rm old blast database file
 echo "Removing old blast database files ..."
 rm -fr massblaster_plutof_rel/
 
 # Download BLAST database files
-echo "Downloading blast database files from https://app.plutof.ut.ee/filerepository/view/6545813 ..."
-wget https://files.plutof.ut.ee/public/orig/71/A4/71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
-tar -xzvf 71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
-rm 71A427007B85C2BE574481AC875EAFE157BA665DA9489AE2228C40D48AEA90D8.gz
+echo "Downloading blast database files from https://app.plutof.ut.ee/filerepository/view/6869105 ..."
+wget https://s3.hpc.ut.ee/plutof-public/original/55491f54-e051-450e-be83-56159ffcd13a.gz
+tar -xzvf 55491f54-e051-450e-be83-56159ffcd13a.gz
+rm 55491f54-e051-450e-be83-56159ffcd13a.gz
 
 # end here
 echo "Done"
