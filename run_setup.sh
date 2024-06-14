@@ -15,10 +15,10 @@ echo "Removing old blast database files ..."
 rm -fr massblaster_plutof_rel/
 
 # Download BLAST database files
-echo "Downloading blast database files from https://app.plutof.ut.ee/filerepository/view/6875053 ..."
-wget https://s3.hpc.ut.ee/plutof-public/original/e5db879b-ceb7-4b3d-b8e4-4d34071489c6.gz
-tar -xzvf e5db879b-ceb7-4b3d-b8e4-4d34071489c6.gz
-rm e5db879b-ceb7-4b3d-b8e4-4d34071489c6.gz
+echo "Downloading blast database files from https://app.plutof.ut.ee/filerepository/view/6908093 ..."
+wget https://s3.hpc.ut.ee/plutof-public/original/6da1f051-9606-447c-a9d0-8cef05136c94.gz
+tar -xzvf 6da1f051-9606-447c-a9d0-8cef05136c94.gz
+rm 6da1f051-9606-447c-a9d0-8cef05136c94.gz
 
 # end here
 echo "Done"
