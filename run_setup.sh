@@ -7,8 +7,8 @@ mkdir -p userdir
 mkdir -p outdata
 
 # Download massblaster.sif
-echo "Downloading massBLASTer singularity container from https://app.plutof.ut.ee/filerepository/view/6869191 ..."
-wget -O massblaster.sif https://s3.hpc.ut.ee/plutof-public/original/94f86639-1d7f-4836-83e3-0c66c7e44132.sif
+echo "Downloading massBLASTer singularity container from https://app.plutof.ut.ee/filerepository/view/8142551 ..."
+wget -O massblaster.sif https://s3.hpc.ut.ee/plutof-public/original/22aac079-bee2-44db-b283-aa91bfcb8771.sif
 
 # rm old blast database file
 echo "Removing old blast database files ..."
