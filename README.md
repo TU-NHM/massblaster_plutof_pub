@@ -7,13 +7,15 @@ massBLASTer - a megablast utility for batch BLAST analysis of multiple query seq
 
 ### Pre-requisites
 
-* OPTIONAL: [Singularity](https://sylabs.io/singularity/) - install Singularity (needed to create new singularity container)
+* [Lima](https://github.com/lima-vm/lima) - for running Linux virtual machine (to Mac users)
+* [Apptainer](https://apptainer.org/) - (formerly Singularity) for creating the container
 
 ### Setup steps
 
 1. OPTIONAL: Create Singularity Image File (SIF)
     ```console
-    sudo singularity build massblaster.sif massblaster_plutof.def
+    limactl shell apptainer
+    apptainer build massblaster.sif massblaster_plutof.def
     ```
 
 2. OPTIONAL: Copy SIF to HPC
